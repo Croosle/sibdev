@@ -6,9 +6,9 @@ export const state = () => ({
   api: [
     {
       id: 0,
-      name: 'Shiba',
-      url: 'shiba',
-      desc: 'Random pictures of Shibu Inu, cats or birds'
+      name: 'Lorem Picsum',
+      url: 'lorem-picsum',
+      desc: 'Images from Unsplash'
     },
     {
       id: 1,
