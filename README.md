@@ -1,6 +1,6 @@
 # sibdev
 
-> My cat&#39;s meow Nuxt.js project
+Запустить сайт: https://croosle.github.io/sibdev/
 
 ## Build Setup
 
