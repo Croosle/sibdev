@@ -25,7 +25,11 @@ export default {
     }
   },
   mounted () {
-    this.$axios.get('http://shibe.online/api/shibes?count=6')
+    const config = {
+      headers: {"Access-Control-Allow-Origin": "*"}
+    }
+
+    this.$axios.get('https://shibe.online/api/shibes?count=6', config)
       .then(res => {this.cards = res.data, this.loading = false})
       .catch((e) => {this.error = e, this.loading = false})
   }
