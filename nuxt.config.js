@@ -1,3 +1,9 @@
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/sibdev/'
+  }
+} : {}
+
 export default {
   mode: 'universal',
   /*
@@ -31,9 +37,7 @@ export default {
   /*
    ** Router settings
    */
-  router: {
-    middleware: ['auth']
-  },
+  ...routerBase,
   /*
    ** Nuxt.js dev-modules
    */
